@@ -6,13 +6,16 @@ import (
 )
 
 func random(nums []int) []int {
+	newNums := make([]int, len(nums))
+	copy(newNums, nums)
+
 	source := rand.NewSource(time.Now().UnixNano())
 	r := rand.New(source)
 
 	for i:= range nums {
-		newPosition := r.Intn(len(nums))
+		newPosition := r.Intn(len(newNums))
 
-		nums[i], nums[newPosition] = nums[newPosition], nums[i]
+		newNums[i], newNums[newPosition] = newNums[newPosition], newNums[i]
 	}
-	return nums
+	return newNums
 }

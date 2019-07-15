@@ -1,3 +1,3 @@
 1. Create a function that randomizes a slice. 
 
-rovide working tests to show it works.
+Provide a few basic tests to verify it works.
