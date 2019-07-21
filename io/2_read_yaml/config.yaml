@@ -1,0 +1,6 @@
+id: 525
+project_name: "ec2 parser"
+team:
+  team_name: "aardvark"
+  membership: 10
+issue_board: "https://github.com/ec2_parser/issues"
