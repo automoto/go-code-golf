@@ -1,5 +1,6 @@
 # editor config
 .idea/
+.coverage/
 # Binaries for programs and plugins
 *.exe
 *.exe~
